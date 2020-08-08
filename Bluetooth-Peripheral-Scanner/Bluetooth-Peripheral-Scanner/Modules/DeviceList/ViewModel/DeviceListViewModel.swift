@@ -16,9 +16,15 @@ protocol DeviceListViewModel: class {
 final class BPSDeviceListViewModel: DeviceListViewModel {
     
     fileprivate let router: DeviceListRouter
-    
+    // MARK: - Services
+    fileprivate let bluetoothService: BluetoothService
+    //---------------------------------------------------//
     init(router: DeviceListRouter) {
         self.router = router
+        // Initialize Services
+        self.bluetoothService = Dependencies.shared.bluetoothService
+        //-----------------------------------------------------------//
+        bluetoothService.startScanning()
     }
     
     deinit {
