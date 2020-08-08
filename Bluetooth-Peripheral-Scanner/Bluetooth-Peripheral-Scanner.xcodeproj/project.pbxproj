@@ -17,7 +17,6 @@
 		84A84B5024DED770001CCB2C /* AppStyling.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84A84B4F24DED770001CCB2C /* AppStyling.swift */; };
 		84A84B5324DED88A001CCB2C /* String+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84A84B5224DED88A001CCB2C /* String+Extension.swift */; };
 		84A84B5724DED8A3001CCB2C /* AppLanguage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84A84B5624DED8A3001CCB2C /* AppLanguage.swift */; };
-		84A84B5A24DED92B001CCB2C /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 84A84B5924DED92B001CCB2C /* Localizable.strings */; };
 		84A84B5E24DED97D001CCB2C /* Localizable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84A84B5D24DED97D001CCB2C /* Localizable.swift */; };
 		84A84B6124DED9FC001CCB2C /* KeysForTranslate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84A84B6024DED9FC001CCB2C /* KeysForTranslate.swift */; };
 		84A84B6724DEDB54001CCB2C /* ModalTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84A84B6324DEDB52001CCB2C /* ModalTransition.swift */; };
@@ -35,6 +34,7 @@
 		84A84B8B24DEDFED001CCB2C /* DeviceListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84A84B8724DEDFED001CCB2C /* DeviceListViewController.swift */; };
 		84A84B8C24DEDFED001CCB2C /* DeviceListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84A84B8824DEDFED001CCB2C /* DeviceListViewModel.swift */; };
 		84A84B9224DEE1DD001CCB2C /* NavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84A84B9124DEE1DD001CCB2C /* NavigationController.swift */; };
+		84A84B9324DEE3E0001CCB2C /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 84A84B9524DEE3E0001CCB2C /* Localizable.strings */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -50,7 +50,6 @@
 		84A84B4F24DED770001CCB2C /* AppStyling.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppStyling.swift; sourceTree = "<group>"; };
 		84A84B5224DED88A001CCB2C /* String+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extension.swift"; sourceTree = "<group>"; };
 		84A84B5624DED8A3001CCB2C /* AppLanguage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppLanguage.swift; sourceTree = "<group>"; };
-		84A84B5924DED92B001CCB2C /* Localizable.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
 		84A84B5D24DED97D001CCB2C /* Localizable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Localizable.swift; sourceTree = "<group>"; };
 		84A84B6024DED9FC001CCB2C /* KeysForTranslate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeysForTranslate.swift; sourceTree = "<group>"; };
 		84A84B6324DEDB52001CCB2C /* ModalTransition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ModalTransition.swift; sourceTree = "<group>"; };
@@ -68,6 +67,7 @@
 		84A84B8724DEDFED001CCB2C /* DeviceListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceListViewController.swift; sourceTree = "<group>"; };
 		84A84B8824DEDFED001CCB2C /* DeviceListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceListViewModel.swift; sourceTree = "<group>"; };
 		84A84B9124DEE1DD001CCB2C /* NavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationController.swift; sourceTree = "<group>"; };
+		84A84B9424DEE3E0001CCB2C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		A3A24EB29416DB900FC4499B /* Pods-Bluetooth-Peripheral-Scanner.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Bluetooth-Peripheral-Scanner.debug.xcconfig"; path = "Target Support Files/Pods-Bluetooth-Peripheral-Scanner/Pods-Bluetooth-Peripheral-Scanner.debug.xcconfig"; sourceTree = "<group>"; };
 		E822A526E2E3B066C3F61EAC /* Pods-Bluetooth-Peripheral-Scanner.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Bluetooth-Peripheral-Scanner.release.xcconfig"; path = "Target Support Files/Pods-Bluetooth-Peripheral-Scanner/Pods-Bluetooth-Peripheral-Scanner.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -241,7 +241,7 @@
 		84A84B5824DED917001CCB2C /* LocalizableStrings */ = {
 			isa = PBXGroup;
 			children = (
-				84A84B5924DED92B001CCB2C /* Localizable.strings */,
+				84A84B9524DEE3E0001CCB2C /* Localizable.strings */,
 			);
 			path = LocalizableStrings;
 			sourceTree = "<group>";
@@ -471,7 +471,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				84A84B3824DED3B0001CCB2C /* LaunchScreen.storyboard in Resources */,
-				84A84B5A24DED92B001CCB2C /* Localizable.strings in Resources */,
+				84A84B9324DEE3E0001CCB2C /* Localizable.strings in Resources */,
 				84A84B3524DED3B0001CCB2C /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -561,6 +561,14 @@
 				84A84B3724DED3B0001CCB2C /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		84A84B9524DEE3E0001CCB2C /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				84A84B9424DEE3E0001CCB2C /* en */,
+			);
+			name = Localizable.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
