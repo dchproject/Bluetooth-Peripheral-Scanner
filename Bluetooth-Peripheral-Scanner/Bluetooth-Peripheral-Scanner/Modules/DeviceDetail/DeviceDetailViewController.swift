@@ -1,5 +1,5 @@
 //
-//  DeviceListViewController.swift
+//  DeviceDetailViewController.swift
 //  Bluetooth-Peripheral-Scanner
 //
 //  Created Admin on 8/8/20.
@@ -7,20 +7,19 @@
 //
 
 import UIKit
-import SnapKit
 
-final class DeviceListViewController: UIViewController {
+final class DeviceDetailViewController: UIViewController {
     
-    fileprivate let viewModel: DeviceListViewModel, router: DeviceListRouter
+    fileprivate let viewModel: DeviceDetailViewModel, router: DeviceDetailRouter
     
-    init(viewModel: DeviceListViewModel, router: DeviceListRouter) {
+    init(viewModel: DeviceDetailViewModel, router: DeviceDetailRouter) {
         self.viewModel = viewModel
         self.router = router
         super.init(nibName: nil, bundle: nil)
     }
     
     required init?(coder: NSCoder) {
-        fatalError("Required init error" + "\(DeviceListViewController.self)")
+        fatalError("Required init error" + "\(DeviceDetailViewController.self)")
     }
     
     override func loadView() {
@@ -41,7 +40,7 @@ final class DeviceListViewController: UIViewController {
 }
 
 // MARK: - Setup UI
-fileprivate extension DeviceListViewController {
+fileprivate extension DeviceDetailViewController {
     
     func setupUI() {
         
@@ -50,33 +49,33 @@ fileprivate extension DeviceListViewController {
 }
 
 // MARK: - Add UI
-fileprivate extension DeviceListViewController {
+fileprivate extension DeviceDetailViewController {
     
-   
+    
 }
 
 // MARK: - Setup Constraints
-fileprivate extension DeviceListViewController {
+fileprivate extension DeviceDetailViewController {
     
     func setupConstraints() {
-       
+        
     }
     
 }
 
 // MARK: - Make Constraints
-fileprivate extension DeviceListViewController {
+fileprivate extension DeviceDetailViewController {
     
-  
+    
 }
 
 // MARK: - Configure UI
-fileprivate extension DeviceListViewController {
+fileprivate extension DeviceDetailViewController {
     
     func configureUI() {
         self.view.backgroundColor = AppStyling.Color.systemWhite.color()
         //---------------------------------------------------------------//
-        self.title = KeysForTranslate.deviceList.localized
+        self.title = KeysForTranslate.deviceDetail.localized
         //---------------------------------------------------------------//
     }
     

@@ -10,7 +10,7 @@ import UIKit
 
 // MARK: - Router
 protocol DeviceListRouter: class {
-
+    func openDeviceDetail(senderType: DeviceDetailSenderType)
 }
 
 final class BPSDeviceListRouter: Router<DeviceListViewController>, DeviceListRouter {
@@ -19,5 +19,10 @@ final class BPSDeviceListRouter: Router<DeviceListViewController>, DeviceListRou
 }
 
 extension BPSDeviceListRouter {
+
+    func openDeviceDetail(senderType: DeviceDetailSenderType) {
+        let module = DeviceDetailModule.init(sender: senderType)
+        open(module.module, transition: module.transition)
+    }
     
 }
