@@ -12,12 +12,15 @@ struct AppStyling {
     
     enum Font {
         case system
+        case systemBold
         
         /// Default size is 14.0
         func font(ofSize size: CGFloat = 14.0) -> UIFont {
             switch self {
             case .system:
                 return .systemFont(ofSize: size)
+            case .systemBold:
+                return .boldSystemFont(ofSize: size)
             }
         }
         

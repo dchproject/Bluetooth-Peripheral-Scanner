@@ -23,8 +23,9 @@ final class DeviceListCell: UICollectionViewCell, CellProtocol {
     
     fileprivate let nameLabel: UILabel = {
         let label = UILabel.init()
-        label.font = AppStyling.Font.system.font(ofSize: 16)
-        label.textColor = AppStyling.Color.systemBlack.color()        
+        label.font = AppStyling.Font.systemBold.font(ofSize: 16)
+        label.textColor = AppStyling.Color.systemBlack.color()
+        label.textAlignment = .center
         return label
     }()
     
@@ -53,7 +54,7 @@ extension DeviceListCell: ConfigureProtocol {
     typealias T = Model
     
     func configure(type: Model) {
-        self.nameLabel.text = type.peripheral?.name
+        self.nameLabel.text = (type.peripheral?.name ?? KeysForTranslate.unknown.localized)
     }
     
 }

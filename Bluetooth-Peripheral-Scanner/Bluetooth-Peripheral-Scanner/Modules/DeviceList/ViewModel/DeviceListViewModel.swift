@@ -14,6 +14,11 @@ import RxSwift
 // MARK: - View Model
 protocol DeviceListViewModel: class {
     init(router: DeviceListRouter)
+    
+    var delegate: DeviceListDelegate { get }
+    var dataSource: DeviceListDataSource { get }
+        
+    var insertRow: BehaviorRelay<IndexPath?> { get }
 }
 
 final class BPSDeviceListViewModel: DeviceListViewModel {
@@ -25,15 +30,26 @@ final class BPSDeviceListViewModel: DeviceListViewModel {
     //---------------------------------------------------//
     fileprivate var peripherals: [Peripheral]
     //---------------------------------------------------//
+    var delegate: DeviceListDelegate
+    var dataSource: DeviceListDataSource
+    //---------------------------------------------------//
+    var insertRow: BehaviorRelay<IndexPath?>
+    //---------------------------------------------------//
     init(router: DeviceListRouter) {
         self.router = router
         self.disposeBag = DisposeBag.init()
         //-----------------------------------------------------------//
         self.peripherals = []
+        //-----------------------------------------------------------//
+        self.insertRow = BehaviorRelay.init(value: nil)
+        //-----------------------------------------------------------//
         // Initialize Services
         self.bluetoothService = Dependencies.shared.bluetoothService
         //-----------------------------------------------------------//
         bluetoothService.startScanning()
+        //-----------------------------------------------------------//
+        self.delegate = BPSDeviceListDelegate.init(peripherals: [])
+        self.dataSource = BPSDeviceListDataSource.init(peripherals: [])
         //-----------------------------------------------------------//
         subscribe()
     }
@@ -49,6 +65,7 @@ fileprivate extension BPSDeviceListViewModel {
     
     func subscribe() {
         didScanPeripheralSubscribe()
+        didSelectItemSubscribe()
     }
     
 }
@@ -61,12 +78,62 @@ fileprivate extension BPSDeviceListViewModel {
             .didScanPeripheral
             .subscribe { [weak self] (event) in
                 
-                guard let element = event.element, let model = element else { return }
-                self?.peripherals.append(model)
+                guard let self = self else { return }
                 
-                debugPrint("peripherals count: ", self?.peripherals.count ?? 0)
+                guard let element = event.element, let model = element else { return }
+                                
+                self.appendPeripheralAndInsertRow(model)
+                
+                debugPrint("peripherals count: ", self.peripherals.count)
                 
         }.disposed(by: disposeBag)
+    }
+    
+}
+
+// MARK: - Did Select Item Subscribe
+fileprivate extension BPSDeviceListViewModel {
+    
+    func didSelectItemSubscribe() {
+        delegate
+            .didSelectItem
+            .subscribe { [weak self] (event) in
+            
+                guard let element = event.element, let peripheral = element else { return }
+                
+                self?.router.openDeviceDetail(senderType: .init(peripheral: peripheral))
+                
+        }.disposed(by: self.disposeBag)
+    }
+    
+}
+
+// MARK: - Append Peripheral
+fileprivate extension BPSDeviceListViewModel {
+    
+    func appendPeripheral(_ peripheral: Peripheral) {
+        self.peripherals.append(peripheral)
+        self.delegate.peripherals.append(peripheral)
+        self.dataSource.peripherals.append(peripheral)
+    }
+    
+}
+
+// MARK: - Append Peripheral And Insert Row
+fileprivate extension BPSDeviceListViewModel {
+    
+    func appendPeripheralAndInsertRow(_ peripheral: Peripheral) {
+        self.appendPeripheral(peripheral)
+        self.insertRow.accept(insertRowIndexPath())
+    }
+    
+}
+
+// MARK: - Insert Row Index Path
+fileprivate extension BPSDeviceListViewModel {
+    
+    func insertRowIndexPath() -> IndexPath {
+        return .init(row: self.peripherals.count - 1, section: 0)
     }
     
 }
