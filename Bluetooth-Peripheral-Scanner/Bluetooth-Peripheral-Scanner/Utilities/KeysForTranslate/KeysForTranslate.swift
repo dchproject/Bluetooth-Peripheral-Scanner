@@ -9,10 +9,10 @@
 import Foundation
 
 enum KeysForTranslate: String {
-    case ok = "ok_Key"
     case deviceList = "device_List_Key"
     case unknown = "unknown_Key"
     case deviceDetail = "device_Detail_Key"
+    case name = "name_Key"
 }
 
 // MARK: - Localizable

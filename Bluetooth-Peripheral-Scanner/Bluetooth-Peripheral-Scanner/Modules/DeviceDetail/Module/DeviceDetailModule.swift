@@ -11,9 +11,9 @@ import RxBluetoothKit
 
 struct DeviceDetailSenderType {
     
-    let peripheral: Peripheral
+    let peripheral: ScannedPeripheral
     
-    init(peripheral: Peripheral) {
+    init(peripheral: ScannedPeripheral) {
         self.peripheral = peripheral
     }
     

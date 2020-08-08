@@ -10,16 +10,16 @@ import UIKit
 import RxBluetoothKit
 
 protocol DeviceListItems {
-    var peripherals: [Peripheral] { get set }
+    var peripherals: [ScannedPeripheral] { get set }
 }
 
 protocol DeviceListItem: DeviceListItems {
-    func peripheral(atIndexPath indexPath: IndexPath) -> Peripheral? 
+    func peripheral(atIndexPath indexPath: IndexPath) -> ScannedPeripheral?
 }
 
 extension DeviceListItem {
     
-    func peripheral(atIndexPath indexPath: IndexPath) -> Peripheral? {
+    func peripheral(atIndexPath indexPath: IndexPath) -> ScannedPeripheral? {
         if (peripherals.isEmpty) {
             return nil
         } else {
@@ -35,9 +35,9 @@ protocol DeviceListDataSource: UICollectionViewDataSource, DeviceListItem {
 
 final class BPSDeviceListDataSource: NSObject, DeviceListDataSource {
     
-    var peripherals: [Peripheral]
+    var peripherals: [ScannedPeripheral]
     
-    init(peripherals: [Peripheral]) {
+    init(peripherals: [ScannedPeripheral]) {
         self.peripherals = peripherals
         super.init()
     }

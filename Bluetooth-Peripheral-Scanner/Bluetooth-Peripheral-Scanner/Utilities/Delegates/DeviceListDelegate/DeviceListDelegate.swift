@@ -12,15 +12,15 @@ import RxCocoa
 import RxBluetoothKit
 
 protocol DeviceListDelegate: UICollectionViewDelegateFlowLayout, DeviceListItem {
-    var didSelectItem: BehaviorRelay<Peripheral?> { get }
+    var didSelectItem: BehaviorRelay<ScannedPeripheral?> { get }
 }
 
 final class BPSDeviceListDelegate: NSObject, DeviceListDelegate {
     
-    var peripherals: [Peripheral]
-    var didSelectItem: BehaviorRelay<Peripheral?>
+    var peripherals: [ScannedPeripheral]
+    var didSelectItem: BehaviorRelay<ScannedPeripheral?>
     
-    init(peripherals: [Peripheral]) {
+    init(peripherals: [ScannedPeripheral]) {
         self.peripherals = peripherals
         self.didSelectItem = BehaviorRelay.init(value: nil)
         super.init()

@@ -28,7 +28,7 @@ final class BPSDeviceListViewModel: DeviceListViewModel {
     // MARK: - Services
     fileprivate let bluetoothService: BluetoothService
     //---------------------------------------------------//
-    fileprivate var peripherals: [Peripheral]
+    fileprivate var peripherals: [ScannedPeripheral]
     //---------------------------------------------------//
     var delegate: DeviceListDelegate
     var dataSource: DeviceListDataSource
@@ -77,14 +77,12 @@ fileprivate extension BPSDeviceListViewModel {
         bluetoothService
             .didScanPeripheral
             .subscribe { [weak self] (event) in
-                
-                guard let self = self else { return }
-                
+               
                 guard let element = event.element, let model = element else { return }
                                 
-                self.appendPeripheralAndInsertRow(model)
+                self?.appendPeripheralAndInsertRow(model)
                 
-                debugPrint("peripherals count: ", self.peripherals.count)
+                debugPrint("peripherals count: ", self?.peripherals.count ?? 0)
                 
         }.disposed(by: disposeBag)
     }
@@ -111,7 +109,7 @@ fileprivate extension BPSDeviceListViewModel {
 // MARK: - Append Peripheral
 fileprivate extension BPSDeviceListViewModel {
     
-    func appendPeripheral(_ peripheral: Peripheral) {
+    func appendPeripheral(_ peripheral: ScannedPeripheral) {
         self.peripherals.append(peripheral)
         self.delegate.peripherals.append(peripheral)
         self.dataSource.peripherals.append(peripheral)
@@ -122,7 +120,7 @@ fileprivate extension BPSDeviceListViewModel {
 // MARK: - Append Peripheral And Insert Row
 fileprivate extension BPSDeviceListViewModel {
     
-    func appendPeripheralAndInsertRow(_ peripheral: Peripheral) {
+    func appendPeripheralAndInsertRow(_ peripheral: ScannedPeripheral) {
         self.appendPeripheral(peripheral)
         self.insertRow.accept(insertRowIndexPath())
     }

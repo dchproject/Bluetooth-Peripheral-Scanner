@@ -7,10 +7,13 @@
 //
 
 import UIKit
+import RxBluetoothKit
 
 // MARK: - View Model
 protocol DeviceDetailViewModel: class {
     init(router: DeviceDetailRouter, senderType: DeviceDetailSenderType)
+    
+    func peripheral() -> ScannedPeripheral
 }
 
 final class BPSDeviceDetailViewModel: DeviceDetailViewModel {
@@ -29,6 +32,11 @@ final class BPSDeviceDetailViewModel: DeviceDetailViewModel {
     
 }
 
+// MARK: - Peripheral
 extension BPSDeviceDetailViewModel {
+    
+    func peripheral() -> ScannedPeripheral {
+        return self.senderType.peripheral
+    }
     
 }

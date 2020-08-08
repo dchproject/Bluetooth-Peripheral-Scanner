@@ -13,9 +13,9 @@ final class DeviceListCell: UICollectionViewCell, CellProtocol {
     
     struct Model {
         
-        let peripheral: Peripheral?
+        let peripheral: ScannedPeripheral?
         
-        init(peripheral: Peripheral?) {
+        init(peripheral: ScannedPeripheral?) {
             self.peripheral = peripheral
         }
         
@@ -54,7 +54,7 @@ extension DeviceListCell: ConfigureProtocol {
     typealias T = Model
     
     func configure(type: Model) {
-        self.nameLabel.text = (type.peripheral?.name ?? KeysForTranslate.unknown.localized)
+        self.nameLabel.text = (type.peripheral?.peripheral.name ?? KeysForTranslate.unknown.localized)
     }
     
 }

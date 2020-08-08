@@ -6,7 +6,7 @@
   Copyright © 2020 Admin. All rights reserved.
 */
 
-"ok_Key" = "ok";
 "device_List_Key" = "Device List";
 "unknown_Key" = "unknown";
 "device_Detail_Key" = "Device Detail";
+"name_Key" = "Name";

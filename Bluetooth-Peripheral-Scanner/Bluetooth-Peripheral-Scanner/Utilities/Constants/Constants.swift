@@ -14,6 +14,9 @@ struct Constants {
     struct StaticText {
         static let space: String = " "
         static let emptyString: String = ""
+        static let colon: String = ":"
+        static let rssi: String = "RSSI"
+        static let txPower: String = "TxPower"
     }
     
 }
