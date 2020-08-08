@@ -40,6 +40,9 @@
 		84A84BA024DEF78B001CCB2C /* DeviceDetailRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84A84B9C24DEF78A001CCB2C /* DeviceDetailRouter.swift */; };
 		84A84BA124DEF78B001CCB2C /* DeviceDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84A84B9D24DEF78A001CCB2C /* DeviceDetailViewController.swift */; };
 		84A84BA224DEF78B001CCB2C /* DeviceDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84A84B9E24DEF78B001CCB2C /* DeviceDetailViewModel.swift */; };
+		84A84BAA24DEFBEC001CCB2C /* DeviceListDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84A84BA924DEFBEC001CCB2C /* DeviceListDelegate.swift */; };
+		84A84BAD24DEFC28001CCB2C /* DeviceListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84A84BAC24DEFC28001CCB2C /* DeviceListCell.swift */; };
+		84A84BB024DEFCF3001CCB2C /* DeviceListDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84A84BAF24DEFCF3001CCB2C /* DeviceListDataSource.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -78,6 +81,9 @@
 		84A84B9C24DEF78A001CCB2C /* DeviceDetailRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceDetailRouter.swift; sourceTree = "<group>"; };
 		84A84B9D24DEF78A001CCB2C /* DeviceDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceDetailViewController.swift; sourceTree = "<group>"; };
 		84A84B9E24DEF78B001CCB2C /* DeviceDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceDetailViewModel.swift; sourceTree = "<group>"; };
+		84A84BA924DEFBEC001CCB2C /* DeviceListDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceListDelegate.swift; sourceTree = "<group>"; };
+		84A84BAC24DEFC28001CCB2C /* DeviceListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceListCell.swift; sourceTree = "<group>"; };
+		84A84BAF24DEFCF3001CCB2C /* DeviceListDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceListDataSource.swift; sourceTree = "<group>"; };
 		A3A24EB29416DB900FC4499B /* Pods-Bluetooth-Peripheral-Scanner.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Bluetooth-Peripheral-Scanner.debug.xcconfig"; path = "Target Support Files/Pods-Bluetooth-Peripheral-Scanner/Pods-Bluetooth-Peripheral-Scanner.debug.xcconfig"; sourceTree = "<group>"; };
 		E822A526E2E3B066C3F61EAC /* Pods-Bluetooth-Peripheral-Scanner.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Bluetooth-Peripheral-Scanner.release.xcconfig"; path = "Target Support Files/Pods-Bluetooth-Peripheral-Scanner/Pods-Bluetooth-Peripheral-Scanner.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -177,6 +183,8 @@
 		84A84B4424DED69F001CCB2C /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
+				84A84BA724DEFBD3001CCB2C /* DataSources */,
+				84A84BA624DEFBCB001CCB2C /* Delegates */,
 				84A84B9024DEE1CE001CCB2C /* NavigationController */,
 				84A84B6524DEDB53001CCB2C /* Router */,
 				84A84B6224DEDB52001CCB2C /* Transitions */,
@@ -373,6 +381,7 @@
 		84A84B8424DEDFD5001CCB2C /* DeviceList */ = {
 			isa = PBXGroup;
 			children = (
+				84A84BAB24DEFC19001CCB2C /* Cells */,
 				84A84B8F24DEDFF7001CCB2C /* Module */,
 				84A84B8E24DEDFF5001CCB2C /* Router */,
 				84A84B8D24DEDFF0001CCB2C /* ViewModel */,
@@ -462,6 +471,46 @@
 				84A84B9B24DEF78A001CCB2C /* DeviceDetailModule.swift */,
 			);
 			path = Module;
+			sourceTree = "<group>";
+		};
+		84A84BA624DEFBCB001CCB2C /* Delegates */ = {
+			isa = PBXGroup;
+			children = (
+				84A84BA824DEFBDA001CCB2C /* DeviceListDelegate */,
+			);
+			path = Delegates;
+			sourceTree = "<group>";
+		};
+		84A84BA724DEFBD3001CCB2C /* DataSources */ = {
+			isa = PBXGroup;
+			children = (
+				84A84BAE24DEFCE8001CCB2C /* DeviceListDataSource */,
+			);
+			path = DataSources;
+			sourceTree = "<group>";
+		};
+		84A84BA824DEFBDA001CCB2C /* DeviceListDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				84A84BA924DEFBEC001CCB2C /* DeviceListDelegate.swift */,
+			);
+			path = DeviceListDelegate;
+			sourceTree = "<group>";
+		};
+		84A84BAB24DEFC19001CCB2C /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				84A84BAC24DEFC28001CCB2C /* DeviceListCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		84A84BAE24DEFCE8001CCB2C /* DeviceListDataSource */ = {
+			isa = PBXGroup;
+			children = (
+				84A84BAF24DEFCF3001CCB2C /* DeviceListDataSource.swift */,
+			);
+			path = DeviceListDataSource;
 			sourceTree = "<group>";
 		};
 		9F990397BB57EC91D93D32FE /* Pods */ = {
@@ -589,6 +638,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				84A84B7D24DEDB72001CCB2C /* RouterProtocol.swift in Sources */,
+				84A84BAD24DEFC28001CCB2C /* DeviceListCell.swift in Sources */,
 				84A84B9224DEE1DD001CCB2C /* NavigationController.swift in Sources */,
 				84A84B8A24DEDFED001CCB2C /* DeviceListRouter.swift in Sources */,
 				84A84B7924DEDB72001CCB2C /* Closable.swift in Sources */,
@@ -599,6 +649,7 @@
 				84A84B9F24DEF78B001CCB2C /* DeviceDetailModule.swift in Sources */,
 				84A84B8024DEDBB4001CCB2C /* ReuseIdentifierProtocol.swift in Sources */,
 				84A84B6824DEDB54001CCB2C /* PushTransition.swift in Sources */,
+				84A84BB024DEFCF3001CCB2C /* DeviceListDataSource.swift in Sources */,
 				84A84B2C24DED3A7001CCB2C /* AppDelegate.swift in Sources */,
 				84A84B6924DEDB54001CCB2C /* Router.swift in Sources */,
 				84A84B6124DED9FC001CCB2C /* KeysForTranslate.swift in Sources */,
@@ -616,6 +667,7 @@
 				84A84B6724DEDB54001CCB2C /* ModalTransition.swift in Sources */,
 				84A84B4E24DED730001CCB2C /* Constants.swift in Sources */,
 				84A84BA224DEF78B001CCB2C /* DeviceDetailViewModel.swift in Sources */,
+				84A84BAA24DEFBEC001CCB2C /* DeviceListDelegate.swift in Sources */,
 				84A84B9924DEE449001CCB2C /* BluetoothService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
