@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -30,6 +30,11 @@
 		84A84B7D24DEDB72001CCB2C /* RouterProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84A84B7524DEDB71001CCB2C /* RouterProtocol.swift */; };
 		84A84B7E24DEDB72001CCB2C /* Transition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84A84B7724DEDB72001CCB2C /* Transition.swift */; };
 		84A84B8024DEDBB4001CCB2C /* ReuseIdentifierProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84A84B7F24DEDBB4001CCB2C /* ReuseIdentifierProtocol.swift */; };
+		84A84B8924DEDFED001CCB2C /* DeviceListModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84A84B8524DEDFED001CCB2C /* DeviceListModule.swift */; };
+		84A84B8A24DEDFED001CCB2C /* DeviceListRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84A84B8624DEDFED001CCB2C /* DeviceListRouter.swift */; };
+		84A84B8B24DEDFED001CCB2C /* DeviceListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84A84B8724DEDFED001CCB2C /* DeviceListViewController.swift */; };
+		84A84B8C24DEDFED001CCB2C /* DeviceListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84A84B8824DEDFED001CCB2C /* DeviceListViewModel.swift */; };
+		84A84B9224DEE1DD001CCB2C /* NavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84A84B9124DEE1DD001CCB2C /* NavigationController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -58,6 +63,11 @@
 		84A84B7524DEDB71001CCB2C /* RouterProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RouterProtocol.swift; sourceTree = "<group>"; };
 		84A84B7724DEDB72001CCB2C /* Transition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Transition.swift; sourceTree = "<group>"; };
 		84A84B7F24DEDBB4001CCB2C /* ReuseIdentifierProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReuseIdentifierProtocol.swift; sourceTree = "<group>"; };
+		84A84B8524DEDFED001CCB2C /* DeviceListModule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceListModule.swift; sourceTree = "<group>"; };
+		84A84B8624DEDFED001CCB2C /* DeviceListRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceListRouter.swift; sourceTree = "<group>"; };
+		84A84B8724DEDFED001CCB2C /* DeviceListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceListViewController.swift; sourceTree = "<group>"; };
+		84A84B8824DEDFED001CCB2C /* DeviceListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceListViewModel.swift; sourceTree = "<group>"; };
+		84A84B9124DEE1DD001CCB2C /* NavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationController.swift; sourceTree = "<group>"; };
 		A3A24EB29416DB900FC4499B /* Pods-Bluetooth-Peripheral-Scanner.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Bluetooth-Peripheral-Scanner.debug.xcconfig"; path = "Target Support Files/Pods-Bluetooth-Peripheral-Scanner/Pods-Bluetooth-Peripheral-Scanner.debug.xcconfig"; sourceTree = "<group>"; };
 		E822A526E2E3B066C3F61EAC /* Pods-Bluetooth-Peripheral-Scanner.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Bluetooth-Peripheral-Scanner.release.xcconfig"; path = "Target Support Files/Pods-Bluetooth-Peripheral-Scanner/Pods-Bluetooth-Peripheral-Scanner.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -103,6 +113,7 @@
 		84A84B2A24DED3A7001CCB2C /* Bluetooth-Peripheral-Scanner */ = {
 			isa = PBXGroup;
 			children = (
+				84A84B8124DEDFB3001CCB2C /* Modules */,
 				84A84B4424DED69F001CCB2C /* Utilities */,
 				84A84B3F24DED640001CCB2C /* Resources */,
 			);
@@ -155,6 +166,7 @@
 		84A84B4424DED69F001CCB2C /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
+				84A84B9024DEE1CE001CCB2C /* NavigationController */,
 				84A84B6524DEDB53001CCB2C /* Router */,
 				84A84B6224DEDB52001CCB2C /* Transitions */,
 				84A84B5F24DED9E9001CCB2C /* KeysForTranslate */,
@@ -338,13 +350,63 @@
 			path = Transition;
 			sourceTree = "<group>";
 		};
+		84A84B8124DEDFB3001CCB2C /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				84A84B8424DEDFD5001CCB2C /* DeviceList */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		84A84B8424DEDFD5001CCB2C /* DeviceList */ = {
+			isa = PBXGroup;
+			children = (
+				84A84B8F24DEDFF7001CCB2C /* Module */,
+				84A84B8E24DEDFF5001CCB2C /* Router */,
+				84A84B8D24DEDFF0001CCB2C /* ViewModel */,
+				84A84B8724DEDFED001CCB2C /* DeviceListViewController.swift */,
+			);
+			path = DeviceList;
+			sourceTree = "<group>";
+		};
+		84A84B8D24DEDFF0001CCB2C /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				84A84B8824DEDFED001CCB2C /* DeviceListViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		84A84B8E24DEDFF5001CCB2C /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				84A84B8624DEDFED001CCB2C /* DeviceListRouter.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		84A84B8F24DEDFF7001CCB2C /* Module */ = {
+			isa = PBXGroup;
+			children = (
+				84A84B8524DEDFED001CCB2C /* DeviceListModule.swift */,
+			);
+			path = Module;
+			sourceTree = "<group>";
+		};
+		84A84B9024DEE1CE001CCB2C /* NavigationController */ = {
+			isa = PBXGroup;
+			children = (
+				84A84B9124DEE1DD001CCB2C /* NavigationController.swift */,
+			);
+			path = NavigationController;
+			sourceTree = "<group>";
+		};
 		9F990397BB57EC91D93D32FE /* Pods */ = {
 			isa = PBXGroup;
 			children = (
 				A3A24EB29416DB900FC4499B /* Pods-Bluetooth-Peripheral-Scanner.debug.xcconfig */,
 				E822A526E2E3B066C3F61EAC /* Pods-Bluetooth-Peripheral-Scanner.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -464,9 +526,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				84A84B7D24DEDB72001CCB2C /* RouterProtocol.swift in Sources */,
+				84A84B9224DEE1DD001CCB2C /* NavigationController.swift in Sources */,
+				84A84B8A24DEDFED001CCB2C /* DeviceListRouter.swift in Sources */,
 				84A84B7924DEDB72001CCB2C /* Closable.swift in Sources */,
 				84A84B4924DED6C7001CCB2C /* Dependencies.swift in Sources */,
+				84A84B8924DEDFED001CCB2C /* DeviceListModule.swift in Sources */,
 				84A84B5024DED770001CCB2C /* AppStyling.swift in Sources */,
+				84A84B8B24DEDFED001CCB2C /* DeviceListViewController.swift in Sources */,
 				84A84B8024DEDBB4001CCB2C /* ReuseIdentifierProtocol.swift in Sources */,
 				84A84B6824DEDB54001CCB2C /* PushTransition.swift in Sources */,
 				84A84B2C24DED3A7001CCB2C /* AppDelegate.swift in Sources */,
@@ -479,6 +545,7 @@
 				84A84B5724DED8A3001CCB2C /* AppLanguage.swift in Sources */,
 				84A84B7E24DEDB72001CCB2C /* Transition.swift in Sources */,
 				84A84B7C24DEDB72001CCB2C /* Animator.swift in Sources */,
+				84A84B8C24DEDFED001CCB2C /* DeviceListViewModel.swift in Sources */,
 				84A84B5E24DED97D001CCB2C /* Localizable.swift in Sources */,
 				84A84B6724DEDB54001CCB2C /* ModalTransition.swift in Sources */,
 				84A84B4E24DED730001CCB2C /* Constants.swift in Sources */,

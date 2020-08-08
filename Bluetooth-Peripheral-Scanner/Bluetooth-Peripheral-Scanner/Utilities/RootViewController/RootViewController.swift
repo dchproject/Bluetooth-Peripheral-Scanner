@@ -11,7 +11,7 @@ import UIKit
 struct RootViewController {
     
     static var rootVC: UIViewController {
-        return UIViewController.init()
+        return NavigationController.init(rootViewController: DeviceListModule.init(sender: nil).module) 
     }
     
 }
