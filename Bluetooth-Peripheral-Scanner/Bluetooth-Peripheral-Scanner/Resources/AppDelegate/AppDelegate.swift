@@ -46,7 +46,8 @@ fileprivate extension AppDelegate {
 fileprivate extension AppDelegate {
     
     func initializeDependencies() -> Dependencies {
-        return Dependencies.init()
+        let bluetoothService: BluetoothService = BPSBluetoothService.init()
+        return Dependencies.init(bluetoothService: bluetoothService)
     }
     
 }

@@ -35,6 +35,7 @@
 		84A84B8C24DEDFED001CCB2C /* DeviceListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84A84B8824DEDFED001CCB2C /* DeviceListViewModel.swift */; };
 		84A84B9224DEE1DD001CCB2C /* NavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84A84B9124DEE1DD001CCB2C /* NavigationController.swift */; };
 		84A84B9324DEE3E0001CCB2C /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 84A84B9524DEE3E0001CCB2C /* Localizable.strings */; };
+		84A84B9924DEE449001CCB2C /* BluetoothService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84A84B9824DEE449001CCB2C /* BluetoothService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -68,6 +69,7 @@
 		84A84B8824DEDFED001CCB2C /* DeviceListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceListViewModel.swift; sourceTree = "<group>"; };
 		84A84B9124DEE1DD001CCB2C /* NavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationController.swift; sourceTree = "<group>"; };
 		84A84B9424DEE3E0001CCB2C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		84A84B9824DEE449001CCB2C /* BluetoothService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BluetoothService.swift; sourceTree = "<group>"; };
 		A3A24EB29416DB900FC4499B /* Pods-Bluetooth-Peripheral-Scanner.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Bluetooth-Peripheral-Scanner.debug.xcconfig"; path = "Target Support Files/Pods-Bluetooth-Peripheral-Scanner/Pods-Bluetooth-Peripheral-Scanner.debug.xcconfig"; sourceTree = "<group>"; };
 		E822A526E2E3B066C3F61EAC /* Pods-Bluetooth-Peripheral-Scanner.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Bluetooth-Peripheral-Scanner.release.xcconfig"; path = "Target Support Files/Pods-Bluetooth-Peripheral-Scanner/Pods-Bluetooth-Peripheral-Scanner.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -113,6 +115,7 @@
 		84A84B2A24DED3A7001CCB2C /* Bluetooth-Peripheral-Scanner */ = {
 			isa = PBXGroup;
 			children = (
+				84A84B9624DEE42A001CCB2C /* Services */,
 				84A84B8124DEDFB3001CCB2C /* Modules */,
 				84A84B4424DED69F001CCB2C /* Utilities */,
 				84A84B3F24DED640001CCB2C /* Resources */,
@@ -401,6 +404,22 @@
 			path = NavigationController;
 			sourceTree = "<group>";
 		};
+		84A84B9624DEE42A001CCB2C /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				84A84B9724DEE430001CCB2C /* BluetoothService */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		84A84B9724DEE430001CCB2C /* BluetoothService */ = {
+			isa = PBXGroup;
+			children = (
+				84A84B9824DEE449001CCB2C /* BluetoothService.swift */,
+			);
+			path = BluetoothService;
+			sourceTree = "<group>";
+		};
 		9F990397BB57EC91D93D32FE /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -549,6 +568,7 @@
 				84A84B5E24DED97D001CCB2C /* Localizable.swift in Sources */,
 				84A84B6724DEDB54001CCB2C /* ModalTransition.swift in Sources */,
 				84A84B4E24DED730001CCB2C /* Constants.swift in Sources */,
+				84A84B9924DEE449001CCB2C /* BluetoothService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
