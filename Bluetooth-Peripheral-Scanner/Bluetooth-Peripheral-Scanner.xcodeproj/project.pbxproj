@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		139E244F0976E1C70C47BC04 /* Pods_Bluetooth_Peripheral_Scanner.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 61159A7DFFCB8DAFE56AD23E /* Pods_Bluetooth_Peripheral_Scanner.framework */; };
 		84A84B2C24DED3A7001CCB2C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84A84B2B24DED3A7001CCB2C /* AppDelegate.swift */; };
 		84A84B3524DED3B0001CCB2C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 84A84B3424DED3B0001CCB2C /* Assets.xcassets */; };
 		84A84B3824DED3B0001CCB2C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84A84B3624DED3B0001CCB2C /* LaunchScreen.storyboard */; };
@@ -32,6 +33,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		61159A7DFFCB8DAFE56AD23E /* Pods_Bluetooth_Peripheral_Scanner.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Bluetooth_Peripheral_Scanner.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		84A84B2824DED3A7001CCB2C /* Bluetooth-Peripheral-Scanner.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Bluetooth-Peripheral-Scanner.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		84A84B2B24DED3A7001CCB2C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		84A84B3424DED3B0001CCB2C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -56,6 +58,8 @@
 		84A84B7524DEDB71001CCB2C /* RouterProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RouterProtocol.swift; sourceTree = "<group>"; };
 		84A84B7724DEDB72001CCB2C /* Transition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Transition.swift; sourceTree = "<group>"; };
 		84A84B7F24DEDBB4001CCB2C /* ReuseIdentifierProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReuseIdentifierProtocol.swift; sourceTree = "<group>"; };
+		A3A24EB29416DB900FC4499B /* Pods-Bluetooth-Peripheral-Scanner.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Bluetooth-Peripheral-Scanner.debug.xcconfig"; path = "Target Support Files/Pods-Bluetooth-Peripheral-Scanner/Pods-Bluetooth-Peripheral-Scanner.debug.xcconfig"; sourceTree = "<group>"; };
+		E822A526E2E3B066C3F61EAC /* Pods-Bluetooth-Peripheral-Scanner.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Bluetooth-Peripheral-Scanner.release.xcconfig"; path = "Target Support Files/Pods-Bluetooth-Peripheral-Scanner/Pods-Bluetooth-Peripheral-Scanner.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,17 +67,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				139E244F0976E1C70C47BC04 /* Pods_Bluetooth_Peripheral_Scanner.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		066ED8F16673B37C1662F665 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				61159A7DFFCB8DAFE56AD23E /* Pods_Bluetooth_Peripheral_Scanner.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		84A84B1F24DED3A7001CCB2C = {
 			isa = PBXGroup;
 			children = (
 				84A84B2A24DED3A7001CCB2C /* Bluetooth-Peripheral-Scanner */,
 				84A84B2924DED3A7001CCB2C /* Products */,
+				9F990397BB57EC91D93D32FE /* Pods */,
+				066ED8F16673B37C1662F665 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -323,6 +338,16 @@
 			path = Transition;
 			sourceTree = "<group>";
 		};
+		9F990397BB57EC91D93D32FE /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A3A24EB29416DB900FC4499B /* Pods-Bluetooth-Peripheral-Scanner.debug.xcconfig */,
+				E822A526E2E3B066C3F61EAC /* Pods-Bluetooth-Peripheral-Scanner.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -330,9 +355,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 84A84B3C24DED3B0001CCB2C /* Build configuration list for PBXNativeTarget "Bluetooth-Peripheral-Scanner" */;
 			buildPhases = (
+				CB51DFCAE72C03D3E4DC2513 /* [CP] Check Pods Manifest.lock */,
 				84A84B2424DED3A7001CCB2C /* Sources */,
 				84A84B2524DED3A7001CCB2C /* Frameworks */,
 				84A84B2624DED3A7001CCB2C /* Resources */,
+				7B8AC838F11BE4C29B9FCF3D /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -388,6 +415,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		7B8AC838F11BE4C29B9FCF3D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Bluetooth-Peripheral-Scanner/Pods-Bluetooth-Peripheral-Scanner-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Bluetooth-Peripheral-Scanner/Pods-Bluetooth-Peripheral-Scanner-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Bluetooth-Peripheral-Scanner/Pods-Bluetooth-Peripheral-Scanner-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CB51DFCAE72C03D3E4DC2513 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Bluetooth-Peripheral-Scanner-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		84A84B2424DED3A7001CCB2C /* Sources */ = {
@@ -546,6 +615,7 @@
 		};
 		84A84B3D24DED3B0001CCB2C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A3A24EB29416DB900FC4499B /* Pods-Bluetooth-Peripheral-Scanner.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -565,6 +635,7 @@
 		};
 		84A84B3E24DED3B0001CCB2C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E822A526E2E3B066C3F61EAC /* Pods-Bluetooth-Peripheral-Scanner.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
