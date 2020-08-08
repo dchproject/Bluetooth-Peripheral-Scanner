@@ -10,6 +10,25 @@
 		84A84B2C24DED3A7001CCB2C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84A84B2B24DED3A7001CCB2C /* AppDelegate.swift */; };
 		84A84B3524DED3B0001CCB2C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 84A84B3424DED3B0001CCB2C /* Assets.xcassets */; };
 		84A84B3824DED3B0001CCB2C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84A84B3624DED3B0001CCB2C /* LaunchScreen.storyboard */; };
+		84A84B4924DED6C7001CCB2C /* Dependencies.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84A84B4824DED6C7001CCB2C /* Dependencies.swift */; };
+		84A84B4C24DED6E9001CCB2C /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84A84B4B24DED6E9001CCB2C /* RootViewController.swift */; };
+		84A84B4E24DED730001CCB2C /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84A84B4D24DED730001CCB2C /* Constants.swift */; };
+		84A84B5024DED770001CCB2C /* AppStyling.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84A84B4F24DED770001CCB2C /* AppStyling.swift */; };
+		84A84B5324DED88A001CCB2C /* String+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84A84B5224DED88A001CCB2C /* String+Extension.swift */; };
+		84A84B5724DED8A3001CCB2C /* AppLanguage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84A84B5624DED8A3001CCB2C /* AppLanguage.swift */; };
+		84A84B5A24DED92B001CCB2C /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 84A84B5924DED92B001CCB2C /* Localizable.strings */; };
+		84A84B5E24DED97D001CCB2C /* Localizable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84A84B5D24DED97D001CCB2C /* Localizable.swift */; };
+		84A84B6124DED9FC001CCB2C /* KeysForTranslate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84A84B6024DED9FC001CCB2C /* KeysForTranslate.swift */; };
+		84A84B6724DEDB54001CCB2C /* ModalTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84A84B6324DEDB52001CCB2C /* ModalTransition.swift */; };
+		84A84B6824DEDB54001CCB2C /* PushTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84A84B6424DEDB52001CCB2C /* PushTransition.swift */; };
+		84A84B6924DEDB54001CCB2C /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84A84B6624DEDB53001CCB2C /* Router.swift */; };
+		84A84B7924DEDB72001CCB2C /* Closable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84A84B6D24DEDB70001CCB2C /* Closable.swift */; };
+		84A84B7A24DEDB72001CCB2C /* ConfigureProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84A84B6F24DEDB70001CCB2C /* ConfigureProtocol.swift */; };
+		84A84B7B24DEDB72001CCB2C /* Routes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84A84B7124DEDB71001CCB2C /* Routes.swift */; };
+		84A84B7C24DEDB72001CCB2C /* Animator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84A84B7324DEDB71001CCB2C /* Animator.swift */; };
+		84A84B7D24DEDB72001CCB2C /* RouterProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84A84B7524DEDB71001CCB2C /* RouterProtocol.swift */; };
+		84A84B7E24DEDB72001CCB2C /* Transition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84A84B7724DEDB72001CCB2C /* Transition.swift */; };
+		84A84B8024DEDBB4001CCB2C /* ReuseIdentifierProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84A84B7F24DEDBB4001CCB2C /* ReuseIdentifierProtocol.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -18,6 +37,25 @@
 		84A84B3424DED3B0001CCB2C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		84A84B3724DED3B0001CCB2C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		84A84B3924DED3B0001CCB2C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		84A84B4824DED6C7001CCB2C /* Dependencies.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dependencies.swift; sourceTree = "<group>"; };
+		84A84B4B24DED6E9001CCB2C /* RootViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootViewController.swift; sourceTree = "<group>"; };
+		84A84B4D24DED730001CCB2C /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		84A84B4F24DED770001CCB2C /* AppStyling.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppStyling.swift; sourceTree = "<group>"; };
+		84A84B5224DED88A001CCB2C /* String+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extension.swift"; sourceTree = "<group>"; };
+		84A84B5624DED8A3001CCB2C /* AppLanguage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppLanguage.swift; sourceTree = "<group>"; };
+		84A84B5924DED92B001CCB2C /* Localizable.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
+		84A84B5D24DED97D001CCB2C /* Localizable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Localizable.swift; sourceTree = "<group>"; };
+		84A84B6024DED9FC001CCB2C /* KeysForTranslate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeysForTranslate.swift; sourceTree = "<group>"; };
+		84A84B6324DEDB52001CCB2C /* ModalTransition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ModalTransition.swift; sourceTree = "<group>"; };
+		84A84B6424DEDB52001CCB2C /* PushTransition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PushTransition.swift; sourceTree = "<group>"; };
+		84A84B6624DEDB53001CCB2C /* Router.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
+		84A84B6D24DEDB70001CCB2C /* Closable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Closable.swift; sourceTree = "<group>"; };
+		84A84B6F24DEDB70001CCB2C /* ConfigureProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConfigureProtocol.swift; sourceTree = "<group>"; };
+		84A84B7124DEDB71001CCB2C /* Routes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Routes.swift; sourceTree = "<group>"; };
+		84A84B7324DEDB71001CCB2C /* Animator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Animator.swift; sourceTree = "<group>"; };
+		84A84B7524DEDB71001CCB2C /* RouterProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RouterProtocol.swift; sourceTree = "<group>"; };
+		84A84B7724DEDB72001CCB2C /* Transition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Transition.swift; sourceTree = "<group>"; };
+		84A84B7F24DEDBB4001CCB2C /* ReuseIdentifierProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReuseIdentifierProtocol.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -50,12 +88,239 @@
 		84A84B2A24DED3A7001CCB2C /* Bluetooth-Peripheral-Scanner */ = {
 			isa = PBXGroup;
 			children = (
-				84A84B2B24DED3A7001CCB2C /* AppDelegate.swift */,
-				84A84B3424DED3B0001CCB2C /* Assets.xcassets */,
-				84A84B3624DED3B0001CCB2C /* LaunchScreen.storyboard */,
-				84A84B3924DED3B0001CCB2C /* Info.plist */,
+				84A84B4424DED69F001CCB2C /* Utilities */,
+				84A84B3F24DED640001CCB2C /* Resources */,
 			);
 			path = "Bluetooth-Peripheral-Scanner";
+			sourceTree = "<group>";
+		};
+		84A84B3F24DED640001CCB2C /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				84A84B4324DED670001CCB2C /* InfoPlist */,
+				84A84B4224DED65F001CCB2C /* LaunchScreen */,
+				84A84B4124DED64F001CCB2C /* Assets */,
+				84A84B4024DED647001CCB2C /* AppDelegate */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		84A84B4024DED647001CCB2C /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				84A84B2B24DED3A7001CCB2C /* AppDelegate.swift */,
+			);
+			path = AppDelegate;
+			sourceTree = "<group>";
+		};
+		84A84B4124DED64F001CCB2C /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				84A84B3424DED3B0001CCB2C /* Assets.xcassets */,
+			);
+			path = Assets;
+			sourceTree = "<group>";
+		};
+		84A84B4224DED65F001CCB2C /* LaunchScreen */ = {
+			isa = PBXGroup;
+			children = (
+				84A84B3624DED3B0001CCB2C /* LaunchScreen.storyboard */,
+			);
+			path = LaunchScreen;
+			sourceTree = "<group>";
+		};
+		84A84B4324DED670001CCB2C /* InfoPlist */ = {
+			isa = PBXGroup;
+			children = (
+				84A84B3924DED3B0001CCB2C /* Info.plist */,
+			);
+			path = InfoPlist;
+			sourceTree = "<group>";
+		};
+		84A84B4424DED69F001CCB2C /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				84A84B6524DEDB53001CCB2C /* Router */,
+				84A84B6224DEDB52001CCB2C /* Transitions */,
+				84A84B5F24DED9E9001CCB2C /* KeysForTranslate */,
+				84A84B5B24DED946001CCB2C /* Protocols */,
+				84A84B5824DED917001CCB2C /* LocalizableStrings */,
+				84A84B5424DED88E001CCB2C /* Enums */,
+				84A84B5124DED878001CCB2C /* Extensions */,
+				84A84B4A24DED6E0001CCB2C /* RootViewController */,
+				84A84B4724DED6BB001CCB2C /* Dependencies */,
+				84A84B4624DED6B0001CCB2C /* Constants */,
+				84A84B4524DED6A7001CCB2C /* AppStyling */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		84A84B4524DED6A7001CCB2C /* AppStyling */ = {
+			isa = PBXGroup;
+			children = (
+				84A84B4F24DED770001CCB2C /* AppStyling.swift */,
+			);
+			path = AppStyling;
+			sourceTree = "<group>";
+		};
+		84A84B4624DED6B0001CCB2C /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				84A84B4D24DED730001CCB2C /* Constants.swift */,
+			);
+			path = Constants;
+			sourceTree = "<group>";
+		};
+		84A84B4724DED6BB001CCB2C /* Dependencies */ = {
+			isa = PBXGroup;
+			children = (
+				84A84B4824DED6C7001CCB2C /* Dependencies.swift */,
+			);
+			path = Dependencies;
+			sourceTree = "<group>";
+		};
+		84A84B4A24DED6E0001CCB2C /* RootViewController */ = {
+			isa = PBXGroup;
+			children = (
+				84A84B4B24DED6E9001CCB2C /* RootViewController.swift */,
+			);
+			path = RootViewController;
+			sourceTree = "<group>";
+		};
+		84A84B5124DED878001CCB2C /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				84A84B5224DED88A001CCB2C /* String+Extension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		84A84B5424DED88E001CCB2C /* Enums */ = {
+			isa = PBXGroup;
+			children = (
+				84A84B5524DED895001CCB2C /* AppLanguage */,
+			);
+			path = Enums;
+			sourceTree = "<group>";
+		};
+		84A84B5524DED895001CCB2C /* AppLanguage */ = {
+			isa = PBXGroup;
+			children = (
+				84A84B5624DED8A3001CCB2C /* AppLanguage.swift */,
+			);
+			path = AppLanguage;
+			sourceTree = "<group>";
+		};
+		84A84B5824DED917001CCB2C /* LocalizableStrings */ = {
+			isa = PBXGroup;
+			children = (
+				84A84B5924DED92B001CCB2C /* Localizable.strings */,
+			);
+			path = LocalizableStrings;
+			sourceTree = "<group>";
+		};
+		84A84B5B24DED946001CCB2C /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				84A84B7224DEDB71001CCB2C /* Animator */,
+				84A84B6A24DEDB70001CCB2C /* ReuseIdentifierProtocol */,
+				84A84B6C24DEDB70001CCB2C /* Closable */,
+				84A84B6E24DEDB70001CCB2C /* ConfigureProtocol */,
+				84A84B7424DEDB71001CCB2C /* RouterProtocol */,
+				84A84B7024DEDB71001CCB2C /* Routes */,
+				84A84B7624DEDB71001CCB2C /* Transition */,
+				84A84B5C24DED972001CCB2C /* Localizable */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		84A84B5C24DED972001CCB2C /* Localizable */ = {
+			isa = PBXGroup;
+			children = (
+				84A84B5D24DED97D001CCB2C /* Localizable.swift */,
+			);
+			path = Localizable;
+			sourceTree = "<group>";
+		};
+		84A84B5F24DED9E9001CCB2C /* KeysForTranslate */ = {
+			isa = PBXGroup;
+			children = (
+				84A84B6024DED9FC001CCB2C /* KeysForTranslate.swift */,
+			);
+			path = KeysForTranslate;
+			sourceTree = "<group>";
+		};
+		84A84B6224DEDB52001CCB2C /* Transitions */ = {
+			isa = PBXGroup;
+			children = (
+				84A84B6324DEDB52001CCB2C /* ModalTransition.swift */,
+				84A84B6424DEDB52001CCB2C /* PushTransition.swift */,
+			);
+			path = Transitions;
+			sourceTree = "<group>";
+		};
+		84A84B6524DEDB53001CCB2C /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				84A84B6624DEDB53001CCB2C /* Router.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		84A84B6A24DEDB70001CCB2C /* ReuseIdentifierProtocol */ = {
+			isa = PBXGroup;
+			children = (
+				84A84B7F24DEDBB4001CCB2C /* ReuseIdentifierProtocol.swift */,
+			);
+			path = ReuseIdentifierProtocol;
+			sourceTree = "<group>";
+		};
+		84A84B6C24DEDB70001CCB2C /* Closable */ = {
+			isa = PBXGroup;
+			children = (
+				84A84B6D24DEDB70001CCB2C /* Closable.swift */,
+			);
+			path = Closable;
+			sourceTree = "<group>";
+		};
+		84A84B6E24DEDB70001CCB2C /* ConfigureProtocol */ = {
+			isa = PBXGroup;
+			children = (
+				84A84B6F24DEDB70001CCB2C /* ConfigureProtocol.swift */,
+			);
+			path = ConfigureProtocol;
+			sourceTree = "<group>";
+		};
+		84A84B7024DEDB71001CCB2C /* Routes */ = {
+			isa = PBXGroup;
+			children = (
+				84A84B7124DEDB71001CCB2C /* Routes.swift */,
+			);
+			path = Routes;
+			sourceTree = "<group>";
+		};
+		84A84B7224DEDB71001CCB2C /* Animator */ = {
+			isa = PBXGroup;
+			children = (
+				84A84B7324DEDB71001CCB2C /* Animator.swift */,
+			);
+			path = Animator;
+			sourceTree = "<group>";
+		};
+		84A84B7424DEDB71001CCB2C /* RouterProtocol */ = {
+			isa = PBXGroup;
+			children = (
+				84A84B7524DEDB71001CCB2C /* RouterProtocol.swift */,
+			);
+			path = RouterProtocol;
+			sourceTree = "<group>";
+		};
+		84A84B7624DEDB71001CCB2C /* Transition */ = {
+			isa = PBXGroup;
+			children = (
+				84A84B7724DEDB72001CCB2C /* Transition.swift */,
+			);
+			path = Transition;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -117,6 +382,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				84A84B3824DED3B0001CCB2C /* LaunchScreen.storyboard in Resources */,
+				84A84B5A24DED92B001CCB2C /* Localizable.strings in Resources */,
 				84A84B3524DED3B0001CCB2C /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -128,7 +394,25 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				84A84B7D24DEDB72001CCB2C /* RouterProtocol.swift in Sources */,
+				84A84B7924DEDB72001CCB2C /* Closable.swift in Sources */,
+				84A84B4924DED6C7001CCB2C /* Dependencies.swift in Sources */,
+				84A84B5024DED770001CCB2C /* AppStyling.swift in Sources */,
+				84A84B8024DEDBB4001CCB2C /* ReuseIdentifierProtocol.swift in Sources */,
+				84A84B6824DEDB54001CCB2C /* PushTransition.swift in Sources */,
 				84A84B2C24DED3A7001CCB2C /* AppDelegate.swift in Sources */,
+				84A84B6924DEDB54001CCB2C /* Router.swift in Sources */,
+				84A84B6124DED9FC001CCB2C /* KeysForTranslate.swift in Sources */,
+				84A84B4C24DED6E9001CCB2C /* RootViewController.swift in Sources */,
+				84A84B7B24DEDB72001CCB2C /* Routes.swift in Sources */,
+				84A84B7A24DEDB72001CCB2C /* ConfigureProtocol.swift in Sources */,
+				84A84B5324DED88A001CCB2C /* String+Extension.swift in Sources */,
+				84A84B5724DED8A3001CCB2C /* AppLanguage.swift in Sources */,
+				84A84B7E24DEDB72001CCB2C /* Transition.swift in Sources */,
+				84A84B7C24DEDB72001CCB2C /* Animator.swift in Sources */,
+				84A84B5E24DED97D001CCB2C /* Localizable.swift in Sources */,
+				84A84B6724DEDB54001CCB2C /* ModalTransition.swift in Sources */,
+				84A84B4E24DED730001CCB2C /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -266,7 +550,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = BQUS6N5XQC;
-				INFOPLIST_FILE = "Bluetooth-Peripheral-Scanner/Info.plist";
+				INFOPLIST_FILE = "Bluetooth-Peripheral-Scanner/Resources/InfoPlist/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -284,7 +568,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = BQUS6N5XQC;
-				INFOPLIST_FILE = "Bluetooth-Peripheral-Scanner/Info.plist";
+				INFOPLIST_FILE = "Bluetooth-Peripheral-Scanner/Resources/InfoPlist/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

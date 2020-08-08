@@ -50,20 +50,3 @@ fileprivate extension AppDelegate {
     }
     
 }
-
-struct Dependencies {
-    
-    static var shared: Dependencies {
-        guard let routerDependencies = (UIApplication.shared.delegate as? AppDelegate)?.dependencies else { fatalError("Not Initialize Dependencies !!!") }
-        return routerDependencies
-    }
-    
-}
-
-struct RootViewController {
-    
-    static var rootVC: UIViewController {
-        return UIViewController.init()
-    }
-    
-}
