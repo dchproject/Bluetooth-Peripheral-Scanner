@@ -12,6 +12,9 @@ import RxBluetoothKit
 import CoreBluetooth
 
 protocol BluetoothService {
+    
+    var didScanPeripheral: BehaviorRelay<Peripheral?> { get }
+    
     func startScanning()
 }
 
@@ -20,9 +23,12 @@ final class BPSBluetoothService: NSObject, BluetoothService {
     fileprivate let centralManager: CentralManager
     fileprivate let disposeBag: DisposeBag
     
+    let didScanPeripheral: BehaviorRelay<Peripheral?>
+    
     override init() {
         self.centralManager = CentralManager.init()
         self.disposeBag = DisposeBag.init()
+        self.didScanPeripheral = BehaviorRelay.init(value: nil)
         super.init()
         
     }
@@ -39,9 +45,18 @@ extension BPSBluetoothService {
             .flatMap { [unowned self] _ in self.centralManager.scanForPeripherals(withServices: []) }
             .subscribe { [unowned self] (event) in
                 
-                debugPrint(event.element?.peripheral.name ?? KeysForTranslate.unknown.localized)
+                self.passScannedPeripheral(event.element)
                 
         }.disposed(by: disposeBag)
+    }
+    
+}
+
+// MARK: - Pass Scanned Peripheral
+fileprivate extension BPSBluetoothService {
+    
+    func passScannedPeripheral(_ model: ScannedPeripheral?) {
+        self.didScanPeripheral.accept(model?.peripheral)
     }
     
 }
